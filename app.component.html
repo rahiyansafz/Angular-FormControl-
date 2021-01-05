@@ -1,0 +1,12 @@
+
+<div class="row">
+      <form [formGroup]="form" (ngSubmit)="submit()">
+          <span formArrayName="tests" *ngFor="let test of testData; let i = index">
+            <ejs-checkbox [formControlName]="i" [label]="test.name" [value]="test.value"></ejs-checkbox>
+          </span>
+          <button>submit</button>
+      </form>
+  </div>
+                    
+     
+
